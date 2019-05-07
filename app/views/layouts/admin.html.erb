@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta>
+  <%= jstylesheet_link_tag 'admin' %>
+  <%= jstylesheet_link_tag 'posts' %>
+  
+  <%= yield :js %>
   <title>Admin Layout</title>
   <%= csrf_meta_tags %>
 </head>
